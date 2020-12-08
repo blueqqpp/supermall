@@ -36,8 +36,8 @@
 
 <style>
 .tab-control {
-    position: sticky;
-    top: 44px;
+    /* position: sticky;
+    top: 44px; */
     background-color: #fff;
     display: flex;
     text-align: center;

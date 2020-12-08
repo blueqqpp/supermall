@@ -29,7 +29,7 @@ export default {
     text-align: center;
     padding: 10px 0 20px;
     font-size: 14px;
-    border-bottom: 12px solid rgb(209, 205, 205);
+    border-bottom: 10px solid rgb(247, 242, 242);
 }
 .recommend-item{
     flex: 1;

@@ -1,6 +1,6 @@
 <template>
     <div class="goods-item">
-       <img :src="gooditem.show.img" alt="">
+       <img :src="gooditem.show.img" alt="" @load="imageLoad">
        <div class="good-info">
            <p>{{gooditem.title}}</p>
            <span class="good-price">{{gooditem.price}}</span>
@@ -19,6 +19,11 @@ export default {
             default(){
                 return {}
             }
+        }
+    },
+    methods: {
+        imageLoad(){
+            this.$bus.$emit('imageLoadFinish')
         }
     }
 }
@@ -46,7 +51,6 @@ export default {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    margin-bottom: 2px;
 }
 .good-info img{
     width: 14px;
