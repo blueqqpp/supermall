@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath:'./',
     configureWebpack: {
       resolve: {
         alias: {
@@ -9,5 +10,5 @@ module.exports = {
           'assets': '@/assets',
         }
       }
-    }
+    } 
   }
