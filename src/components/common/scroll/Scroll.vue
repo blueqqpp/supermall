@@ -32,6 +32,7 @@ export default {
            probeType: this.probeType,
            pullUpLoad: this.pullUpLoad
         }),
+        
         this.scroll.on('scroll',position=>{
             this.$emit('scroll',position)
         }),
@@ -40,6 +41,11 @@ export default {
             this.$emit('pullingUp')
         })
         
+    },
+    computed: {
+        scrollY(){
+            return this.scroll.y
+        }
     },
     methods:{
         scrollTo(x,y,time=300){
@@ -56,5 +62,7 @@ export default {
 </script>
 
 <style scoped>
-
+.wrapper {
+    overflow: hidden;
+}
 </style>
